@@ -12,6 +12,16 @@ public class Comment {
 
     private String comment;
 
+    private int likeCount;
+
+    public int getLikeCount() {
+        return likeCount;
+    }
+
+    public void setLikeCount(int likeCont) {
+        this.likeCount = likeCont;
+    }
+
     public String getComment() {
         return comment;
     }
@@ -45,5 +55,12 @@ public class Comment {
 
     public void setPost(Post post) {
         this.post = post;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "comment='" + comment + '\'' +
+                '}';
     }
 }
